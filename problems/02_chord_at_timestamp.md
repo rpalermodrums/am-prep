@@ -4,10 +4,6 @@
 
 Easy / Medium
 
-## Pattern
-
-Binary search over sorted intervals
-
 ## Prompt
 
 You are given a sorted list of chord changes. Each chord change is a pair:
@@ -82,25 +78,7 @@ changes is sorted by start_time in ascending order
 start_time and time are integers
 ```
 
-## Clarifying Questions to Ask
-
-- What should happen if the timestamp is before the first chord?
-- Are the changes guaranteed sorted?
-- If time lands exactly on a chord change, should we return the new chord?
-- Can two changes share the same timestamp?
-
-## Expected Approach
-
-Find the rightmost chord change whose `start_time <= time`.
-
-A linear scan works, but binary search is better for one query against a long list.
-
-## Target Complexity
-
-```text
-Time:  O(log n)
-Space: O(1)
-```
+---
 
 ## Follow-ups
 
