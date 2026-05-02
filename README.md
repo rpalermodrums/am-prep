@@ -1,6 +1,6 @@
-# Jazz LeetCode Interview Practice
+# Interview Practice
 
-A small Python practice repo for mock technical interviews using music-theory/jazz-theory flavored problems.
+A small Python practice repo for mock technical interviews using music-flavored problems.
 
 The goal is still standard interview performance:
 
@@ -10,20 +10,6 @@ The goal is still standard interview performance:
 - test edge cases
 - discuss time and space complexity
 - improve the approach when appropriate
-
-## Problems
-
-| # | Problem | Difficulty | Main Pattern |
-|---|---------|------------|--------------|
-| 1 | Normalize Note Names | Easy | Hash map / parsing |
-| 2 | Chord at Timestamp | Easy / Medium | Binary search |
-| 3 | Chord Symbol Parser | Medium | String parsing |
-
-Problem statements live in [`problems/`](./problems).
-
-Starter implementations live in [`src/`](./src).
-
-Tests live in [`tests/`](./tests).
 
 ## Quick Start
 
@@ -52,6 +38,21 @@ pytest tests/test_normalize_note_names.py
 pytest tests/test_chord_at_timestamp.py
 pytest tests/test_chord_symbol_parser.py
 ```
+
+## Problems
+
+| # | Problem | Difficulty | Main Pattern |
+|---|---------|------------|--------------|
+| 1 | Normalize Note Names | Easy | Hash map / parsing |
+| 2 | Chord at Timestamp | Easy / Medium | Binary search |
+| 3 | Chord Symbol Parser | Medium | String parsing |
+
+Problem statements live in [`problems/`](./problems).
+
+Starter implementations live in [`src/`](./src).
+
+Tests live in [`tests/`](./tests).
+
 
 ## Interview Practice Rules
 
