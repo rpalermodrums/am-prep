@@ -8,6 +8,8 @@ def parse_note_token(s: str, i: int) -> tuple[str, int]:
     if i < len(s) and s[i] in "#b":
         note += s[i]
         i += 1
+        if i < len(s) and s[i] in "#b":
+            raise ValueError("Double accidentals are not supported")
 
     return note, i
 
